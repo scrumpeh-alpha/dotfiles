@@ -21,6 +21,10 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+--GENERAL KEYMAPS
+
+--NvimTree
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
@@ -34,23 +38,6 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
--- Catpuccin
-require("catppuccin").setup({
-	flavour="macchiato"
-})
-vim.cmd.colorscheme "catppuccin"
-
--- Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-
 -- Treesitter
-local config = require("nvim-treesitter.configs")
-config.setup({
-	ensure_installed = {"lua","python","c","vim","html","cpp",},
-	highlight = { enable = true },
-        indent = { enable = true },
-})
+
+-- NvimTree
