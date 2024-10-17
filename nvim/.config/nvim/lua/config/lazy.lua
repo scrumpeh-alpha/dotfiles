@@ -21,9 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
---GENERAL KEYMAPS
-
---NvimTree
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -37,7 +34,3 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
-
--- Treesitter
-
--- NvimTree
