@@ -9,6 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
+                -- Add languages for lsp here
 				ensure_installed = { "lua_ls", "pylsp", "clangd", "texlab", "cssls", "html" },
 			})
 		end,
@@ -19,6 +20,8 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+
+            --Config lsp for each lang here as follows
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})

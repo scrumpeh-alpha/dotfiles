@@ -5,6 +5,7 @@ return {
 
         null_ls.setup({
             sources = {
+                -- formatting/diagnostic engines (Install with mason)
                 --lua
                 null_ls.builtins.formatting.stylua,
                 --javascript
