@@ -6,7 +6,8 @@ return {
     config = function()
         require("lualine").setup({
             options = {
-                theme = "dracula",
+                -- was dracula before
+                theme = "ayu_dark",
             },
         })
     end,
