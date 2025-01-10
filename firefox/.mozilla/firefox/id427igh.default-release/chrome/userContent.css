@@ -1,0 +1,27 @@
+@-moz-document url-prefix(about:private){
+    /* html.private{ background-color: #2B2A33 !important; } /* back color */
+
+    /* search box colors */
+    html.private div.showSearch button.search-handoff-button { 
+        background-color: #0e0e0e !important;
+    }     
+    html.private .fake-textbox {
+        color: #fff !important;
+    }
+    /* remove logo */
+    #about-private-browsing-logo {
+        display:none !important;
+    }
+    /* hide bottom panel */
+    html.private div.showPrivate div.info { display: none !important; } /* hide bottom panel */
+}
+
+@-moz-document url-prefix(about:home), url-prefix(about:newtab), url-prefix(about:private){
+    body {
+        --new-tab-background-color: #000000 !important;
+        --newtab-background-color-secondary: #0e0e0e !important;
+        background-color: #000000 !important;
+        --newtab-element-hover-color: color-mix(in srgb, #272727 80%, #050505) !important;
+        font-family: DejaVu\ Sans\ Mono !important;
+    }
+}
