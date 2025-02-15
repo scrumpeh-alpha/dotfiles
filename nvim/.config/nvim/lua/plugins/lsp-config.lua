@@ -10,7 +10,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
                 -- Add languages for lsp here
-				ensure_installed = { "lua_ls", "pylsp", "clangd", "texlab", "cssls", "html" },
+				ensure_installed = { "lua_ls", "ruff", "pylsp", "clangd", "texlab", "cssls", "html" },
 			})
 		end,
 	},
@@ -25,6 +25,9 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+            lspconfig.ruff.setup({
+                capabilities = capabilities,
+            })
 			lspconfig.pylsp.setup({
 				capabilities = capabilities,
 			})

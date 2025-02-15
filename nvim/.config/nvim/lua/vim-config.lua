@@ -4,9 +4,11 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set number")
+vim.cmd("set backspace=indent,eol,start")
 
 -- clipboard
-vim.cmd("set clipboard+=unnamedplus")
+-- vim.cmd("set clipboard+=unnamedplus")
+vim.keymap.set({'n', 'v'}, '<C-C>', '"+y', { noremap = true, silent = true })
 
 -- keybindings
 vim.keymap.set("n", "<C-h>", "<C-w>h", {desc="Move to left window"})
@@ -17,6 +19,8 @@ vim.keymap.set("n", "<Esc>", "<cmd> noh <CR>", {desc="Clear highlights"})
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set('i', "<C-BS>", "<C-W>")
 
 -- vim.keymap.set("i", "{", "{}<left>", {})
 
