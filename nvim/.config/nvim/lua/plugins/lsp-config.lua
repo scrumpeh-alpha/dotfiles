@@ -10,7 +10,8 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
                 -- Add languages for lsp here
-				ensure_installed = { "lua_ls", "ruff", "pylsp", "clangd", "texlab", "cssls", "html" },
+                -- ensure_installed = { "lua_ls", "ruff", "pylsp", "pyright", "clangd", "texlab", "cssls", "html" },
+				ensure_installed = { "lua_ls", "ruff", "pyright", "clangd", "texlab", "cssls", "html" },
 			})
 		end,
 	},
@@ -43,6 +44,9 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
+            -- lspconfig.pyright.setup({
+				-- capabilities = capabilities,
+            -- })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
