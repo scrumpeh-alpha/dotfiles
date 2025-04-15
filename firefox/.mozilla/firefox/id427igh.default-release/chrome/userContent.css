@@ -21,7 +21,17 @@
         --new-tab-background-color: #000000 !important;
         --newtab-background-color-secondary: #0e0e0e !important;
         background-color: #000000 !important;
-        --newtab-element-hover-color: color-mix(in srgb, #272727 80%, #050505) !important;
+        /* --newtab-element-hover-color: color-mix(in srgb, #272727 80%, #050505) !important; */
+        --newtab-element-hover-color: #0e0e0e !important;
+        font-family: DejaVu\ Sans\ Mono !important;
+    }
+    #newtab-search-text::placeholder {
+        color:#d1d1d1;
+    }
+    #newtab-search-text {
+        color:aqua;
+    }
+    .title {
         font-family: DejaVu\ Sans\ Mono !important;
     }
 }
