@@ -27,3 +27,7 @@ vim.keymap.set('i', "<C-BS>", "<C-W>")
 -- colorscheme
 vim.cmd.colorscheme "wildcharm"
 vim.cmd("set bg=dark")
+
+-- diagnostics
+vim.diagnostic.config({ virtual_text = true })
+vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float)
