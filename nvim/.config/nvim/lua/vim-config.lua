@@ -17,6 +17,7 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", {desc="Move to up window"})
 vim.keymap.set("n", "<C-k>", "<C-w>k", {desc="Move to down window"})
 vim.keymap.set("n", "<Esc>", "<cmd> noh <CR>", {desc="Clear highlights"})
 
+-- primeagen keybindings
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
@@ -28,6 +29,4 @@ vim.keymap.set('i', "<C-BS>", "<C-W>")
 vim.cmd.colorscheme "wildcharm"
 vim.cmd("set bg=dark")
 
--- diagnostics
-vim.diagnostic.config({ virtual_text = true })
-vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float)
+

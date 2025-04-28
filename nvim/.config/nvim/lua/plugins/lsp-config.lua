@@ -9,8 +9,8 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-                -- Add languages for lsp here
-                ensure_installed = { "lua_ls", "ruff", "pylsp", "pyright", "clangd", "texlab", "cssls", "html" },
+				-- Add languages for lsp here
+				ensure_installed = { "lua_ls", "ruff", "pylsp", "pyright", "clangd", "texlab", "cssls", "html" },
 			})
 		end,
 	},
@@ -21,13 +21,13 @@ return {
 
 			local lspconfig = require("lspconfig")
 
-            --Config lsp for each lang here as follows
+			--Config lsp for each lang here as follows
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-            lspconfig.ruff.setup({
-                capabilities = capabilities,
-            })
+			lspconfig.ruff.setup({
+				capabilities = capabilities,
+			})
 			-- lspconfig.pylsp.setup({
 			-- 	capabilities = capabilities,
 			-- })
@@ -43,13 +43,14 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
-            lspconfig.pyright.setup({
+			lspconfig.pyright.setup({
 				capabilities = capabilities,
-            })
+			})
 
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+            vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show LSP Info" })
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+			vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, { desc = "Show code actions" })
+			vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename variable" })
 		end,
 	},
 }
