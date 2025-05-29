@@ -26,7 +26,5 @@ vim.keymap.set('i', "<C-BS>", "<C-W>")
 -- vim.keymap.set("i", "{", "{}<left>", {})
 
 -- colorscheme
-vim.cmd.colorscheme "wildcharm"
+vim.cmd.colorscheme("oxocarbon")
 vim.cmd("set bg=dark")
-
-

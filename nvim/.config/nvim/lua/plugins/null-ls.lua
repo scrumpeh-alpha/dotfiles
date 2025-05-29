@@ -24,7 +24,7 @@ return {
         vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
         -- vim diagnostics keybinding and settings 
         vim.diagnostic.config({ virtual_text = true })
-        vim.keymap.set("n", "<C-k>", vim.diagnostic.open_float)
+        vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float)
     end,
 }
 
