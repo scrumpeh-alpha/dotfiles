@@ -1,0 +1,17 @@
+ColumnLimit: 0
+TabWidth: 4
+IndentWidth: 4
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortBlocksOnASingleLine: Always
+AllowShortFunctionsOnASingleLine: All
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+SpacesBeforeTrailingComments: 2
+
+# Custom settings
+DerivePointerAlignment: false
+PointerAlignment: Left
+ReferenceAlignment: Left
+Cpp11BracedListStyle: false
+SpaceBeforeCpp11BracedList: true
+IndentCaseLabels: true
