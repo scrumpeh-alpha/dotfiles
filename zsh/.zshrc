@@ -1,5 +1,9 @@
 alias rm='rmtrash'
 alias rmdir='rmdirtrash'
+
+bindkey '^H' backward-kill-word
+bindkey '^?' backward-kill-word
+bindkey '5~' kill-word
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
