@@ -33,6 +33,7 @@ return {
 				"html",
 				"ts_ls",
 				"emmet_ls",
+                "cmake",
 			}
             -- Enable all languages in list
 			vim.lsp.enable(languages)
