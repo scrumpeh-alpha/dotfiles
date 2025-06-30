@@ -10,7 +10,7 @@
         "hyprland/workspaces",
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
         "mpd",
@@ -30,18 +30,17 @@
         "tray",
         "custom/power"
     ],
-     //Modules configuration
      "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "{name}: {icon}",
          "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
+             "1": "",
+             "2": "",
+          //   "3": "",
+          //   "4": "",
+          //   "5": "",
              "urgent": "",
              "active": "",
              "default": ""

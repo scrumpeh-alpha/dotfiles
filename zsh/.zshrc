@@ -1,6 +1,3 @@
-alias rm='rmtrash'
-alias rmdir='rmdirtrash'
-
 bindkey '^H' backward-kill-word
 bindkey '^?' backward-kill-word
 bindkey '5~' kill-word
@@ -106,5 +103,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rm="rmtrash"
+alias rmdir="rmdirtrash"
+alias l="ls -lah --group-directories-first"
+alias laf="ls -lAh --group-directories-first"
+alias lsf="ls --color=tty --group-directories-first"
+alias open="xdg-open"
+alias waybar-reload="pkill waybar && hyprctl dispatch exec waybar"
+
+export MOZ_ENABLE_WAYLAND=1
+export OBSIDIAN_USE_WAYLAND=1
+
+export HYPRCONFIG=$HOME/.config/hypr/hyprland.conf
 
 [ -f "/home/scrumpeh/.ghcup/env" ] && . "/home/scrumpeh/.ghcup/env" # ghcup-env

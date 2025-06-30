@@ -10,3 +10,4 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 [ -r /home/scrumpeh/.config/byobu/prompt ] && . /home/scrumpeh/.config/byobu/prompt   #byobu-prompt#
 
+export MOZ_ENABLE_WAYLAND=1
