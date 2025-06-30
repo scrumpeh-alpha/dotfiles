@@ -34,9 +34,17 @@ return {
 				"ts_ls",
 				"emmet_ls",
                 "cmake",
+                "tinymist",
 			}
             -- Enable all languages in list
 			vim.lsp.enable(languages)
+
+            vim.lsp.config("tinymist", {
+                settings = {
+                    formatterMode = "typstyle",
+                    exportPdf = "never",
+                }
+            })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show LSP Info" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })

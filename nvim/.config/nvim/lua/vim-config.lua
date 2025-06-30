@@ -1,4 +1,4 @@
-vim.opt.guicursor = "n-v-i-c:ver75"
+-- vim.opt.guicursor = "n-v-i-c:ver75"
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
@@ -10,11 +10,13 @@ vim.cmd("set backspace=indent,eol,start")
 -- vim.cmd("set clipboard+=unnamedplus")
 vim.keymap.set({'n', 'v'}, '<C-C>', '"+y', { noremap = true, silent = true })
 
--- keybindings
-vim.keymap.set("n", "<C-h>", "<C-w>h", {desc="Move to left window"})
-vim.keymap.set("n", "<C-l>", "<C-w>l", {desc="Move to right window"})
-vim.keymap.set("n", "<C-j>", "<C-w>j", {desc="Move to up window"})
-vim.keymap.set("n", "<C-k>", "<C-w>k", {desc="Move to down window"})
+--  KEYBINDINGS --
+
+-- Disabled, trying default bindings for now
+-- vim.keymap.set("n", "<C-h>", "<C-w>h", {desc="Move to left window"})
+-- vim.keymap.set("n", "<C-l>", "<C-w>l", {desc="Move to right window"})
+-- vim.keymap.set("n", "<C-j>", "<C-w>j", {desc="Move to up window"})
+-- vim.keymap.set("n", "<C-k>", "<C-w>k", {desc="Move to down window"})
 vim.keymap.set("n", "<Esc>", "<cmd> noh <CR>", {desc="Clear highlights"})
 
 -- primeagen keybindings
