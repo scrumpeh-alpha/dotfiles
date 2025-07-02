@@ -86,7 +86,7 @@
     "clock": {
         "format": "<span color='#eeeeee'>{:%I:%M %p | %d/%m/%y}</span>",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "<span color='#eeeeee'>{:%Y-%m-%d}</span>"
     }
 
 }

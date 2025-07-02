@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0);
+    background: transparent;
     color: #08adff;
     font-family: "DejaVu Sans Mono";
     transition: background-color .5s;
@@ -82,11 +82,11 @@ window#waybar {
 
 #workspaces button {
   background: transparent;
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
+  /* font-family: */
+  /*   SpaceMono Nerd Font, */
+  /*   feather; */
   font-weight: 900;
-  font-size: 13pt;
+  /* font-size: 13pt; */
   color: #cec0f5;
   border:none;
   border-radius: 15px;
@@ -111,4 +111,10 @@ window#waybar {
 }
 #custom-arch:hover {
     color: #1793d1;
+}
+
+
+/* TODO FIX */
+window#waybar.empty #window {
+    background: transparent;
 }
