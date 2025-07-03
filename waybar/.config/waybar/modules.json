@@ -26,7 +26,9 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        // "format": "{percent}% {icon}",
+        "format": "{icon}",
+        "tooltip-format" : "Brightness {percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
@@ -45,14 +47,18 @@
             "car": "",
             "default": ["", "", ""]
         },
+        "tooltip-format" : "{icon} {volume}%",
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "   {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        // "format-wifi": "   {essid} ({signalStrength}%)",
+        "format-wifi": "  ",
+        // "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": " N",
+        // "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{essid} - {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "  ",
         "on-click": "nm-connection-editor"
     },
     "cpu": {
@@ -84,9 +90,9 @@
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format": "<span color='#eeeeee'>{:%I:%M %p | %d/%m/%y}</span>",
+        "format": "<span color='#eeeeee'>{:%I:%M %p}</span>",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "<span color='#eeeeee'>{:%Y-%m-%d}</span>"
+        "format-alt": "<span color='#eeeeee'>{:%d/%m/%y}</span>"
     }
 
 }

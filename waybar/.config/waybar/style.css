@@ -23,7 +23,7 @@ window#waybar {
     margin: 0px 10px;
     margin-top: 5px;
     padding: 0px 5px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .modules-left {
     padding: 0;
@@ -51,7 +51,7 @@ window#waybar {
 #language,
 #mpd {
     padding: 0px 10px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #clock {
@@ -89,7 +89,7 @@ window#waybar {
   /* font-size: 13pt; */
   color: #cec0f5;
   border:none;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 #workspaces button.active {
