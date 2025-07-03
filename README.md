@@ -7,6 +7,8 @@ This is my personal dotfile repo with all my configs.
 - `stow`
 
 ### How-to:
+
+#### Adding a config
 - Make a dotfile directory
 ```bash
 mkdir dotfiles
@@ -15,11 +17,18 @@ mkdir dotfiles
 ```bash
 cd dotfiles
 mkdir nvim && mkdir nvim/.config/
-cp ~/.config/nvim ~/dotfiles/nvim/.config/
+mv ~/.config/nvim nvim/.config/
+stow nvim
 ```
 - Then commit to repository after changes
 ```bash
 git add *
 git commit -m "commit"
 git push
+```
+
+#### Using a config
+- It as as simple as stowing every subdirectory
+```bash
+stow *
 ```
