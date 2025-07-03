@@ -14,6 +14,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME="candy" MY DEFAULT
+# ZSH_THEME="fox"  ZSH_THEME="murilasso" CANDIDATES
 ZSH_THEME="candy"
 
 # Set list of themes to pick from when loading at random
@@ -116,6 +118,6 @@ alias waybar-reload="pkill waybar && hyprctl dispatch exec waybar"
 export MOZ_ENABLE_WAYLAND=1
 export OBSIDIAN_USE_WAYLAND=1
 
-export HYPRCONFIG=$HOME/.config/hypr/hyprland.conf
+# export HYPRCONFIG=$HOME/.config/hypr/hyprland.conf
 
 [ -f "/home/scrumpeh/.ghcup/env" ] && . "/home/scrumpeh/.ghcup/env" # ghcup-env

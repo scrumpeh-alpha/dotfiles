@@ -5,7 +5,7 @@ notify-send "wlogout" "Initiating logout"
 sleep 1
 
 HYPRCMDS=$(hyprctl -j clients | jq -j '.[] | "dispatch closewindow address:\(.address); "')
-hyprctl --batch "$HYPRCMDS" >> /tmp/hypr/hyprexitwithgrace.log 2>&1
+hyprctl --batch "$HYPRCMDS" >> /tmp/hyprexitwithgrace.log 2>&1
 
 notify-send "wlogout" "Closing Applications..."
 
