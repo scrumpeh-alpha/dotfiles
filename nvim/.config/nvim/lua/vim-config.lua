@@ -6,6 +6,9 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("set number")
 vim.cmd("set backspace=indent,eol,start")
 
+vim.cmd("set linebreak")
+vim.cmd("set wrap")
+
 -- clipboard
 -- vim.cmd("set clipboard+=unnamedplus")
 vim.keymap.set({'n', 'v'}, '<C-C>', '"+y', { noremap = true, silent = true })
@@ -35,3 +38,4 @@ vim.cmd.colorscheme("oxocarbon")
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+vim.cmd('autocmd VimLeave * set guicursor= | call chansend(v:stderr, "\x1b[ q")')
