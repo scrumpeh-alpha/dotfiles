@@ -17,17 +17,19 @@ window#waybar {
 
 .modules-left,
 .modules-center,
-.modules-right
-{
-    background: rgba(10, 0, 14, 0.7);
+.modules-right {
+    /* background: rgba(10, 0, 14, 0.7); */
+    background: rgba(10, 0, 14, 0.75);
     margin: 0px 10px;
     margin-top: 5px;
     padding: 0px 5px;
     border-radius: 10px;
 }
+
 .modules-left {
     padding: 0;
 }
+
 .modules-center {
     padding: 0 10px;
 }
@@ -81,26 +83,26 @@ window#waybar {
 
 
 #workspaces button {
-  background: transparent;
-  /* font-family: */
-  /*   SpaceMono Nerd Font, */
-  /*   feather; */
-  font-weight: 900;
-  /* font-size: 13pt; */
-  color: #cec0f5;
-  border:none;
-  border-radius: 10px;
+    background: transparent;
+    /* font-family: */
+    /*   SpaceMono Nerd Font, */
+    /*   feather; */
+    font-weight: 900;
+    font-size: 13pt;
+    color: #cec0f5;
+    border: none;
+    border-radius: 10px;
 }
 
 #workspaces button.active {
-    background: rgba(24, 18, 27, 1); 
+    background: rgba(24, 18, 27, 1);
     color: #08adff;
 }
 
 #workspaces button:hover {
-  background: rgba(24, 18, 27, 1);
-  color: #cec0f5;
-  box-shadow: none;
+    background: rgba(24, 18, 27, 1);
+    color: #cec0f5;
+    box-shadow: none;
 }
 
 #custom-arch {
@@ -109,12 +111,24 @@ window#waybar {
     font-size: 25px;
     transition: color .5s;
 }
+
 #custom-arch:hover {
     color: #1793d1;
 }
 
+#custom-lockscreen {
+    padding: 0px 15px 0px 10px;
+    /* padding: 0px 10px; */
+    /* color: #eeeeee; */
+    border-radius: 10px;
+}
+
+#custom-lockscreen:hover {
+    background: rgba(24, 18, 27, 0.9);
+}
+
 
 /* TODO FIX */
-window#waybar.empty #window {
+window#waybar.empty .modules-center {
     background: transparent;
 }

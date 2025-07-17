@@ -20,7 +20,8 @@
         "battery",
         "backlight",
         "clock",
-        "tray"
+        "tray",
+        "custom/lockscreen"
     ],
     //Modules configuration
 
