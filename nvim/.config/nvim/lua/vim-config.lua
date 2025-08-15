@@ -1,9 +1,16 @@
 -- vim.opt.guicursor = "n-v-i-c:ver75"
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
-vim.cmd("set number")
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.number = true
+vim.opt.backspace = "indent,eol,start"
+-- vim.cmd("set expandtab")
+-- vim.cmd("set tabstop=4")
+-- vim.cmd("set softtabstop=4")
+-- vim.cmd("set shiftwidth=4")
+-- vim.cmd("set number")
 vim.cmd("set backspace=indent,eol,start")
 
 vim.cmd("set linebreak")
