@@ -29,10 +29,10 @@ return {
 				"pyright",
 				"clangd",
 				"texlab",
-				"cssls",
-				"html",
+				-- "cssls",
+				-- "html",
 				"ts_ls",
-				"emmet_ls",
+				"emmet_language_server",
                 "cmake",
                 "tinymist",
 			}
@@ -43,6 +43,7 @@ return {
                 settings = {
                     formatterMode = "typstyle",
                     exportPdf = "never",
+                    formatterIndentSize = 4,
                 }
             })
 
