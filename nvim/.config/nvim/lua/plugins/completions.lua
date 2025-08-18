@@ -11,6 +11,9 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp-signature-help"
+        },
 		config = function()
 			-- Set up nvim-cmp.
 			local cmp = require("cmp")
@@ -58,6 +61,7 @@ return {
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
+                    { name = 'nvim_lsp_signature_help' },
 				}, {
 					{ name = "buffer" },
 				}),

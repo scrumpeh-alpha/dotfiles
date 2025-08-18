@@ -24,28 +24,41 @@ return {
 
 			local languages = {
 				"lua_ls",
-				"ruff",
-				"pylsp",
-				"pyright",
+				-- "ruff",
+				-- "pylsp",
+				-- "pyright",
+				"basedpyright",
 				"clangd",
 				"texlab",
 				-- "cssls",
 				-- "html",
 				"ts_ls",
 				"emmet_language_server",
-                "cmake",
-                "tinymist",
+				"cmake",
+				"tinymist",
 			}
-            -- Enable all languages in list
+			-- Enable all languages in list
 			vim.lsp.enable(languages)
 
-            vim.lsp.config("tinymist", {
-                settings = {
-                    formatterMode = "typstyle",
-                    exportPdf = "never",
-                    formatterIndentSize = 4,
-                }
-            })
+			vim.lsp.config("tinymist", {
+				settings = {
+					formatterMode = "typstyle",
+					exportPdf = "never",
+					formatterIndentSize = 4,
+				},
+			})
+
+			vim.lsp.config("basedpyright", {
+				settings = {
+					basedpyright = {
+						analysis = {
+							diagnosticSeverityOverrides = {
+								reportMissingTypeStubs = "none",
+							},
+						},
+					},
+				},
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show LSP Info" })
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
