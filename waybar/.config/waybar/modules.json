@@ -91,7 +91,7 @@
     },
     "clock": {
         "format": "<span color='#eeeeee'>{:%I:%M %p}</span>",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "<span color='#eeeeee'>{:%d/%m/%y}</span>"
     },
     "custom/lockscreen": {
