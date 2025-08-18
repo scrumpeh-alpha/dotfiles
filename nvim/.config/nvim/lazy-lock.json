@@ -7,6 +7,7 @@
   "clangd_extensions.nvim": { "branch": "main", "commit": "db28f29be928d18cbfb86fbfb9f83f584f658feb" },
   "cmake-tools.nvim": { "branch": "master", "commit": "17244215b1a96e4b2a83a16abd6719197f270f96" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },
+  "cmp-nvim-lsp-signature-help": { "branch": "main", "commit": "031e6ba70b0ad5eee49fd2120ff7a2e325b17fa7" },
   "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
@@ -31,5 +32,6 @@
   "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
   "typst-preview.nvim": { "branch": "master", "commit": "dea4525d5420b7c32eebda7de15a6beb9d6574fa" },
   "vague.nvim": { "branch": "main", "commit": "a14014bd886b28d45be4dbea72992ce60741dc5f" },
+  "vimtex": { "branch": "master", "commit": "2b1ca6635dd419d485162c9debd4866fab662cad" },
   "vscode.nvim": { "branch": "main", "commit": "57cec1509bfb57dfc3c4d5ba5e8db9a5b5e42be2" }
 }
