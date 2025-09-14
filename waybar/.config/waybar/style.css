@@ -3,8 +3,9 @@
 
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "DejaVu Sans Mono";
-    font-size: 13px;
+    /* font-family: "DejaVu Sans Mono"; */
+    font-family: "JetBrainsMono NFP";
+    font-size: 14px;
     transition: background-color .3s ease-out;
 }
 
@@ -20,9 +21,9 @@ window#waybar {
 .modules-right {
     /* background: rgba(10, 0, 14, 0.7); */
     background: rgba(10, 0, 14, 0.75);
+    padding: 0px 5px;
     margin: 0px 10px;
     margin-top: 5px;
-    padding: 0px 5px;
     border-radius: 10px;
 }
 
@@ -32,6 +33,7 @@ window#waybar {
 
 .modules-center {
     padding: 0 10px;
+    font-weight: 700;
 }
 
 #clock,
@@ -52,12 +54,12 @@ window#waybar {
 #power-profiles-daemon,
 #language,
 #mpd {
-    padding: 0px 10px;
+    padding: 10px 10px;
     border-radius: 10px;
 }
 
-#clock {
-    padding: 10px 10px;
+#battery, #clock {
+    padding: 0px 10px;
 }
 
 #clock:hover,
@@ -88,7 +90,7 @@ window#waybar {
     /*   SpaceMono Nerd Font, */
     /*   feather; */
     font-weight: 900;
-    font-size: 13pt;
+    /* font-size: 13pt; */
     color: #cec0f5;
     border: none;
     border-radius: 10px;
