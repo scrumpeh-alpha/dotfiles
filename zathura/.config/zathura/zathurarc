@@ -1,0 +1,4 @@
+set scroll-page-aware "true"
+
+set font "JetBrainsMono NF 12"
+set guioptions "h"
