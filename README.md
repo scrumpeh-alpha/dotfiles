@@ -9,7 +9,7 @@ This is my personal dotfile repo with all my configs.
 ### How-to:
 
 #### Adding a config
-- Make a dotfile directory
+- Make a dotfile directory (if not present)
 ```bash
 mkdir dotfiles
 ```
@@ -28,7 +28,11 @@ git push
 ```
 
 #### Using a config
-- It as as simple as stowing every subdirectory
+- To use a singular config, do
+```bash
+stow [name]
+```
+- To immediately stow everything, it as as simple as stowing every subdirectory
 ```bash
 stow *
 ```
