@@ -6,12 +6,11 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.backspace = "indent,eol,start"
--- vim.cmd("set expandtab")
--- vim.cmd("set tabstop=4")
--- vim.cmd("set softtabstop=4")
--- vim.cmd("set shiftwidth=4")
--- vim.cmd("set number")
-vim.cmd("set backspace=indent,eol,start")
+vim.opt.scrolloff = 4
+
+vim.opt.swapfile = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 
 vim.cmd("set linebreak")
 vim.cmd("set wrap")
