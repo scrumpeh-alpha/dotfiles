@@ -1,0 +1,6 @@
+{
+    "reportAny": false,
+    "reportUnusedCallResult": false,
+    "reportMissingTypeStubs" : false
+}
+
