@@ -16,7 +16,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="candy" MY DEFAULT
 # ZSH_THEME="fox"  ZSH_THEME="murilasso" CANDIDATES
-ZSH_THEME="candy"
+
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="candy-blue" # For some reason, I dislike this.
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -121,3 +123,8 @@ export OBSIDIAN_USE_WAYLAND=1
 # export HYPRCONFIG=$HOME/.config/hypr/hyprland.conf
 
 [ -f "/home/scrumpeh/.ghcup/env" ] && . "/home/scrumpeh/.ghcup/env" # ghcup-env
+
+books_dir="/run/media/scrumpeh/External\\040SSD/!books"
+# alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; zathura "${bn}" & disown; cd'
+
+alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; nohup zathura "${bn}" & disown; cd'
