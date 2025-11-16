@@ -124,7 +124,15 @@ export OBSIDIAN_USE_WAYLAND=1
 
 [ -f "/home/scrumpeh/.ghcup/env" ] && . "/home/scrumpeh/.ghcup/env" # ghcup-env
 
-books_dir="/run/media/scrumpeh/External\\040SSD/!books"
+
+# Custom directories
+
+export EDRIVE="/run/media/scrumpeh/External\040SSD/"
+export CDRIVE="/run/media/scrumpeh/OS"
+
+BOOKS_DIR="${EDRIVE}!books"
 # alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; zathura "${bn}" & disown; cd'
 
-alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; nohup zathura "${bn}" & disown; cd'
+# alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; nohup zathura "${bn}" & disown; cd -'
+
+alias bopen="source ~/scripts/bopen.sh"
