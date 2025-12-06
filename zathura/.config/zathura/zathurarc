@@ -2,3 +2,7 @@ set scroll-page-aware "true"
 
 set font "JetBrainsMono NF 12"
 set guioptions "h"
+
+set selection-clipboard clipboard
+
+set default-bg "#2A2A2E"
