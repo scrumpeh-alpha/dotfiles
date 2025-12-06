@@ -1,14 +1,26 @@
 #/bin/bash
 
-if [[ $1 != "" ]]; then
+if [[ -n "$1" ]]; then
     nohup zathura "${1}" >/dev/null 2>&1 & disown
-    return 0
+    exit 0
 fi
 
 
-file="$(find . -type f | fzf)"
+FILE_PATTERN=(
+    \( 
+    -iname "*.pdf" 
+    -o -iname "*.djvu" 
+    -o -iname "*.ps" 
+    -o -iname "*.epub" 
+    \)
+)
 
-echo $file
-if [[ $file != "" ]]; then
-    nohup zathura "${file}" >/dev/null 2>&1 & disown
+file="$(
+    find . -maxdepth 5 -type f "${FILE_PATTERN[@]}" -print 2>/dev/null \
+    | fzf --prompt="Open file with Zathura: "
+)"
+
+if [[ -n "$file" ]]; then
+    echo "Opening: $file"
+    nohup zathura "$file" >/dev/null 2>&1 & disown
 fi

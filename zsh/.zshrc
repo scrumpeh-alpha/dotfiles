@@ -136,4 +136,4 @@ BOOKS_DIR="${EDRIVE}!books"
 # alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; nohup zathura "${bn}" & disown; cd -'
 
 alias bopen="source ~/scripts/bopen.sh"
-alias zopen="source ~/scripts/zathuraopen.sh"
+alias zopen="~/scripts/zathuraopen.sh"
