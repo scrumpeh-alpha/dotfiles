@@ -127,7 +127,7 @@ export OBSIDIAN_USE_WAYLAND=1
 
 # Custom directories
 
-export EDRIVE="/run/media/scrumpeh/External\040SSD/"
+export EDRIVE="/run/media/scrumpeh/External\ SSD/"
 export CDRIVE="/run/media/scrumpeh/OS"
 
 BOOKS_DIR="${EDRIVE}!books"
@@ -137,3 +137,7 @@ BOOKS_DIR="${EDRIVE}!books"
 
 alias bopen="source ~/scripts/bopen.sh"
 alias zopen="~/scripts/zathuraopen.sh"
+alias ocdev="~/scripts/opencode-run.sh"
+alias gemdev="~/scripts/gemini-run.sh"
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
