@@ -24,7 +24,7 @@ window#waybar {
     padding: 0px 5px;
     margin: 0px 10px;
     margin-top: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .modules-left {
@@ -55,7 +55,7 @@ window#waybar {
 #language,
 #mpd {
     padding: 10px 10px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #battery, #clock {
@@ -93,7 +93,7 @@ window#waybar {
     /* font-size: 13pt; */
     color: #cec0f5;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #workspaces button.active {
@@ -122,7 +122,7 @@ window#waybar {
     padding: 0px 15px 0px 10px;
     /* padding: 0px 10px; */
     /* color: #eeeeee; */
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #custom-lockscreen:hover {
