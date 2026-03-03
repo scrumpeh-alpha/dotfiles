@@ -20,6 +20,8 @@ return {
             local luasnip = require("luasnip")
 			require("luasnip.loaders.from_vscode").lazy_load() -- Adds vscode snippets from friendly-snippets to luasnip
 
+            luasnip.filetype_extend("javascript", { "jsdoc" })
+
 			cmp.setup({
 				snippet = {
 					-- REQUIRED - you must specify a snippet engine

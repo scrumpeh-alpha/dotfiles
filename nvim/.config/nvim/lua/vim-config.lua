@@ -45,3 +45,7 @@ vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 vim.cmd('autocmd VimLeave * set guicursor= | call chansend(v:stderr, "\x1b[ q")')
+
+vim.keymap.set("n", "<leader>dq", function()
+  vim.diagnostic.setqflist({ open = true })
+end, { desc = "Send Diagnostics To Quickfix List and open" })

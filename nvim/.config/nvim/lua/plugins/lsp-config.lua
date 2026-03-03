@@ -30,12 +30,13 @@ return {
 				"basedpyright",
 				"clangd",
 				"texlab",
-				-- "cssls",
+				"cssls",
 				-- "html",
 				"ts_ls",
 				"emmet_language_server",
 				"cmake",
 				"tinymist",
+				"jdtls",
 			}
 			-- Enable all languages in list
 			vim.lsp.enable(languages)
