@@ -131,12 +131,11 @@ export EDRIVE="/run/media/scrumpeh/External\ SSD/"
 export CDRIVE="/run/media/scrumpeh/OS"
 
 BOOKS_DIR="${EDRIVE}!books"
-# alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; zathura "${bn}" & disown; cd'
-
-# alias bopen='cd $books_dir; bn="$(find . -type f | fzf)"; nohup zathura "${bn}" & disown; cd -'
 
 alias bopen="source ~/scripts/bopen.sh"
-alias zopen="~/scripts/zathuraopen.sh"
+alias zopen="~/scripts/pdfopen.sh"
+alias siopen="~/scripts/pdfopen.sh -o sioyek"
+
 alias ocdev="~/scripts/opencode-run.sh"
 alias gemdev="~/scripts/gemini-run.sh"
 
