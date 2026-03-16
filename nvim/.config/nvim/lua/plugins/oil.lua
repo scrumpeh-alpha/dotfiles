@@ -1,0 +1,7 @@
+return {
+	"stevearc/oil.nvim",
+	config = function()
+		require("oil").setup()
+        vim.keymap.set('n', '<leader>e', ':Oil<CR>:<BS>', { desc = "Open Oil directory view" })
+	end,
+}
