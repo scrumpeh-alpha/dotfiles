@@ -8,4 +8,5 @@ docker run -it --rm \
     -v "$(pwd)":/workspace \
     -v "$HOME/.gemini:/home/node/.gemini" \
     -v "$HOME/.gitconfig:/home/node/.gitconfig:ro" \
-    gemini-cli-custom
+    gemini-dev
+    # gemini-cli-custom
