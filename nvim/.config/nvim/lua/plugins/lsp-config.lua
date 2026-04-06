@@ -46,6 +46,7 @@ return {
 					formatterMode = "typstyle",
 					exportPdf = "never",
 					formatterIndentSize = 4,
+					typstExtraArgs = { "--features", "html" },
 				},
 			})
 
