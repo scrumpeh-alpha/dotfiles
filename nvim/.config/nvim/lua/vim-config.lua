@@ -9,7 +9,8 @@ vim.opt.backspace = "indent,eol,start"
 vim.opt.scrolloff = 4
 
 vim.opt.swapfile = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+-- vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
 vim.opt.undofile = true
 
 vim.cmd("set linebreak")
