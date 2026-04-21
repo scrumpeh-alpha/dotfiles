@@ -139,4 +139,7 @@ alias siopen="~/scripts/pdfopen.sh -o sioyek"
 alias ocdev="~/scripts/opencode-run.sh"
 alias gemdev="~/scripts/gemini-run.sh"
 
+export TERMINFO_DIRS="$HOME/.terminfo:/usr/lib/kitty/terminfo:/usr/share/terminfo"
+unset TERMINFO
+
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
