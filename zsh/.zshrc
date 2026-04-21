@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 bindkey '^H' backward-kill-word
 bindkey '^?' backward-kill-word
 bindkey '5~' kill-word
@@ -18,7 +25,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="fox"  ZSH_THEME="murilasso" CANDIDATES
 
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="candy-blue" # For some reason, I dislike this.
+# ZSH_THEME="candy-blue" # For some reason, I dislike this.
+ZSH_THEME="powerlevel10k/powerlevel10k" # https://github.com/romkatv/powerlevel10k#oh-my-zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -143,3 +151,6 @@ export TERMINFO_DIRS="$HOME/.terminfo:/usr/lib/kitty/terminfo:/usr/share/terminf
 unset TERMINFO
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
