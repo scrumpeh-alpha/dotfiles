@@ -1,9 +1,9 @@
 return {
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
     build = ":TSUpdate",
     config = function()
-        local config = require("nvim-treesitter.configs")
-        config.setup({
+        require('nvim-treesitter').setup {
             -- For syntax highlighting
             ensure_installed = { "lua", "python", "c", "vim", "html", "cpp", "latex" },
             auto_install = true,
@@ -13,6 +13,6 @@ return {
                 -- disable tree-sitter indent temporarily cuz it doesn't work
                 disable = { "c", "cpp" }
             },
-        })
+        }
     end,
 }
