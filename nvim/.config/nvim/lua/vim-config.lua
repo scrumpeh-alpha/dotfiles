@@ -50,3 +50,10 @@ vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 vim.keymap.set("n", "<leader>dq", function()
   vim.diagnostic.setqflist({ open = true })
 end, { desc = "Send Diagnostics To Quickfix List and open" })
+
+
+-- Treesitter: Have to manually start with autocmd
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = { 'markdown', 'lua', 'vim', 'c', 'cpp', 'glsl', 'python', 'rust', 'typst', 'latex', 'typescript', 'javascript', 'html', 'css', 'java', },
+	callback = function() vim.treesitter.start() end,
+})
