@@ -150,6 +150,8 @@ alias gemdev="~/scripts/gemini-run.sh"
 export TERMINFO_DIRS="$HOME/.terminfo:/usr/lib/kitty/terminfo:/usr/share/terminfo"
 unset TERMINFO
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
