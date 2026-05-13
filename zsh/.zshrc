@@ -140,9 +140,19 @@ export CDRIVE="/run/media/scrumpeh/OS"
 
 BOOKS_DIR="${EDRIVE}!books"
 
-alias bopen="source ~/scripts/bopen.sh"
-alias zopen="~/scripts/pdfopen.sh"
-alias siopen="~/scripts/pdfopen.sh -o sioyek"
+# alias bopen="source ~/scripts/bopen.sh"
+# alias zopen="~/scripts/pdfopen.sh"
+# alias siopen="~/scripts/pdfopen.sh -o sioyek"
+
+# Base aliases
+alias docopen='~/scripts/pdfopen.sh'
+alias zopen='READER=zathura ~/scripts/pdfopen.sh'
+alias sopen='READER=sioyek ~/scripts/pdfopen.sh'
+
+# Location-specific aliases
+alias bopen='~/scripts/pdfopen.sh "$BOOKS_DIR"'
+alias zbopen='zopen "$BOOKS_DIR"'
+alias sbopen='sopen "$BOOKS_DIR"'
 
 alias ocdev="~/scripts/opencode-run.sh"
 alias gemdev="~/scripts/gemini-run.sh"
