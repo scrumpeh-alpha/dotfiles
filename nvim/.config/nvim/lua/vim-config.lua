@@ -13,8 +13,10 @@ vim.opt.swapfile = false
 vim.opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir"
 vim.opt.undofile = true
 
-vim.cmd("set linebreak")
-vim.cmd("set wrap")
+vim.opt.wrap = true
+vim.opt.linebreak = true
+
+vim.opt.colorcolumn = "100"
 
 -- clipboard
 -- vim.cmd("set clipboard+=unnamedplus")
