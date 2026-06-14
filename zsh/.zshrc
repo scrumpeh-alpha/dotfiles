@@ -135,7 +135,7 @@ export OBSIDIAN_USE_WAYLAND=1
 
 # Custom directories
 
-export EDRIVE="/run/media/scrumpeh/External\ SSD/"
+export EDRIVE="/run/media/scrumpeh/External_SSD/"
 export CDRIVE="/run/media/scrumpeh/OS"
 
 BOOKS_DIR="${EDRIVE}!books"
@@ -156,6 +156,7 @@ alias sbopen='sopen "$BOOKS_DIR"'
 
 alias ocdev="~/scripts/opencode-run.sh"
 alias gemdev="~/scripts/gemini-run.sh"
+alias pidev="~/scripts/pi-agent-run.sh"
 
 export TERMINFO_DIRS="$HOME/.terminfo:/usr/lib/kitty/terminfo:/usr/share/terminfo"
 unset TERMINFO
@@ -166,3 +167,6 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Private settings
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
