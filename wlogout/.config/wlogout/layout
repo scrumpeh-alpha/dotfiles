@@ -12,13 +12,13 @@
 }
 {
     "label" : "logout",
-    "action" : "$HOME/.config/wlogout/closeapps.sh && hyprctl dispatch exit",
+    "action" : "hyprshutdown -t 'Logging out...'",
     "text" : "Logout",
     "keybind" : "e"
 }
 {
     "label" : "shutdown",
-    "action" : "$HOME/.config/wlogout/closeapps.sh && systemctl poweroff",
+    "action" : "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'",
     "text" : "Shutdown",
     "keybind" : "s"
 }
@@ -30,7 +30,7 @@
 }
 {
     "label" : "reboot",
-    "action" : "$HOME/.config/wlogout/closeapps.sh && systemctl reboot",
+    "action" : "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'",
     "text" : "Reboot",
     "keybind" : "r"
 }
