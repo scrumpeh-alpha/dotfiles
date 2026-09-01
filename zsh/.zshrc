@@ -88,7 +88,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k" # https://github.com/romkatv/powerlevel1
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git, fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -162,6 +162,8 @@ export TERMINFO_DIRS="$HOME/.terminfo:/usr/lib/kitty/terminfo:/usr/share/terminf
 unset TERMINFO
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+export LESS="-R -i -M -N --underline-special"
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
