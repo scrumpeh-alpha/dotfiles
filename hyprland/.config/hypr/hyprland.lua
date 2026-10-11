@@ -19,6 +19,7 @@ require("configs.input")
 require("configs.keybinds")
 require("configs.windowrules")
 require("configs.scrolling")
+require("configs.animations")
 
 -----------------------
 ----- PERMISSIONS -----
